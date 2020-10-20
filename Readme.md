@@ -33,3 +33,6 @@ You may also package the application in the form of a jar and then run the jar f
 mvn clean package
 java -jar target/file-demo-0.0.1-SNAPSHOT.jar
 ```
+
+upload a file
+curl -v -F path=test/hello -F file=@a.txt http://localhost:9090/uploadFile
